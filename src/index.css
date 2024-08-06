@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #2c2c2c;
+}
+
+
+.profile-top-gradient {
+  background: linear-gradient(180deg, #017DF8 -75.72%, #8A14F5 84.77%)
+}
+
+.profile-bottom-gradient {
+  background: linear-gradient(180deg, #8A14F5 23.57%, #017DF8 186.94%);
+}
+
+.vip-top-gradient {
+  background: linear-gradient(242.94deg, rgba(0, 209, 255, 0.7) 0%, rgba(7, 45, 72, 0.7) 100%);
+}
+
+.old-price:before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: #740117;
+  -webkit-transform: rotate(-23deg);
+  -ms-transform: rotate(-23deg);
+  transform: rotate(-23deg);
+  top: 10px;
+}
+
+.ant-tabs-nav {
+  width: 100% !important;
+}
+
+.ant-tabs-tab {
+  display: block;
+  flex: 1;
+  text-align: center;
+}
+
+.ant-tabs-nav>div:nth-of-type(1) {
+  display: unset !important;
+  width: 100% !important;
+}
+
+.ant-tabs-tab-btn {
+  width: 100%;
+}
+
+.suggestion-dislike-btn:not(:disabled):not(.ant-btn-disabled) {
+  background-color: #D70240 !important;
+  color: white
+}
+
+.suggestion-dislike-btn:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #D70240AA !important;
+  color: white
+}
+
+.suggestion-like-btn:not(:disabled):not(.ant-btn-disabled) {
+  background-color: #02BF96 !important;
+  color: white
+}
+
+.suggestion-like-btn:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #02BF96AA !important;
+  color: white
+}
+
+.animate-button {
+  -webkit-animation: pulse-gradient 3.5s ease-in-out infinite;
+  animation: pulse-gradient 3.5s ease-in-out infinite;
+  background: linear-gradient(90deg, #6366f1 0, #d946ef 50%, #6366f1);
+  background-size: auto;
+  background-size: 200% auto;
+}
+
+.animate-button:hover {
+  -webkit-animation: pulse-gradient 3.5s ease-in-out infinite;
+  animation: pulse-gradient 3.5s ease-in-out infinite;
+  background: linear-gradient(90deg, #6366f1 0, #d946ef 50%, #6366f1) !important;
+  background-size: auto;
+  background-size: 200% auto;
+  color: #FFFFFF !important;
+  border-color: #6366f1 !important;
+  opacity: 0.8;
+}
+
+.ant-input-data-count {
+  color: #AAAAAA !important;
+}
+
+
+.message-input {
+  color: white !important;
+  background-color: rgb(44 44 44) !important;
+}
+
+.message-input:hover,
+.message-input:focus,
+.message-input:focus-within {
+  border-color: rgb(135, 116, 225);
+}
+
+.send-btn:not(:disabled) {
+  background-color: rgb(135, 116, 225);
+}
+
+.send-btn:not(:disabled):hover {
+  background-color: rgb(135, 116, 225) !important;
+  border-color: rgb(135, 116, 225) !important;
+}
+
+@keyframes pulse-gradient {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
